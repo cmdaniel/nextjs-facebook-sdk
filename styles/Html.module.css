@@ -12,10 +12,12 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: stretch;
+  align-items: flex-start;
   width: 100%;
   margin: auto;
+  height: 100vh;
+  align-content: flex-start;
 }
 
 .back {

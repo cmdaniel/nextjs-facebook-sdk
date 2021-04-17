@@ -1,6 +1,6 @@
 ## Sample of Facebook Comments Plugin with Nextjs
 
-Use of the plug in in Server Side Generated Pages.
+Use of the plug-in in Server Side Generated Pages.
 
 ## Known issues
 - There is a problem to render the Facebook plugin:
