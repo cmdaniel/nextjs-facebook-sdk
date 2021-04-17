@@ -1,16 +1,11 @@
 import Head from 'next/head';
-import { useEffect } from 'react';
 import FBComments from '../components/facebook/FBComments';
+import useFacebook from '../hooks/useFacebook';
 import styles from '../styles/Home.module.css';
-import addFacebookScript from '../utils/facebookScript';
 
 export default function Home({ posts }) {
 
-  useEffect(() => {
-    if(posts?.length > 0) {
-      addFacebookScript();
-    }
-  }, [posts]);
+  useFacebook({ addTrack: false });
 
   return (
 
@@ -25,7 +20,10 @@ export default function Home({ posts }) {
       </Head>
 
       <main className={styles.main}>
-          
+        
+        <h1>This page is working!</h1>
+        <h2>A <a onClick={() => window.location.reload()} style={ { textDecoration: 'underline', cursor: 'pointer' } }>refresh</a> might be required. I still don't know how to solve it.</h2>
+           
         <ul>
           
           { posts && posts.map(post => (

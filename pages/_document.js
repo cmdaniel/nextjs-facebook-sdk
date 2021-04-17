@@ -10,22 +10,11 @@ class MyDocument extends Document {
   render() {
 
     return (
-      <Html>
+      <Html lang="pt">
 
         <Head />
 
         <body>
-
-            {/* <div id="fb-root"></div>
-        
-            <script 
-                async 
-                defer 
-                crossorigin="anonymous" 
-                nonce="wSpIoLOU" 
-                src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v10.0"
-            ></script> */}
-       
      
           <Main />
 

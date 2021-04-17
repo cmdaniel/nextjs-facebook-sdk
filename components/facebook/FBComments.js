@@ -6,7 +6,7 @@ const FBComments = ({ width, href, numPosts, dataLazy }) => {
   return (
      <>
        
-        <div className={styles.comment} data-href={href} data-numposts={numPosts} data-width={width} data-lazy={dataLazy}> 
+        <div className="fb-comments" data-href={href} data-numposts={numPosts} data-width={width} data-lazy={dataLazy}> 
         </div>
 
      </>

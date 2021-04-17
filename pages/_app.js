@@ -11,6 +11,10 @@ function NextJsFacebookSdkApp({ Component, pageProps }) {
         </Link>
 
         <Link href="/html">
+            <a>Tags into React Fragment</a>
+        </Link> 
+
+        <Link href="/test.html">
             <a>Pure Html</a>
         </Link> 
 
