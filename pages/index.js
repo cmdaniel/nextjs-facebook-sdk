@@ -18,7 +18,7 @@ export default function Home({ posts }) {
 
       <Head>
 
-        <title>Nextjs Facebook SDK</title>
+        <title>Nextjs Facebook SDK - Home</title>
 
         <link rel="icon" href="/favicon.ico" />
 

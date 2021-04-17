@@ -25,7 +25,8 @@ class MyDocument extends Document {
                 nonce="wSpIoLOU" 
                 src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v10.0"
             ></script> */}
-
+       
+     
           <Main />
 
           <NextScript />
