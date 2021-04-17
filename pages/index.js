@@ -61,7 +61,7 @@ export default function Home({ posts }) {
 
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   
   const posts = [
     { id: 1, title: 'Post 1' },
