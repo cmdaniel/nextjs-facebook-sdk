@@ -1,0 +1,39 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.back {
+  position: fixed;
+  display: block;
+  top: 10px;
+  left: 10px;
+  z-index: 99999;
+}
+
+.main li {
+  background-color: whitesmoke;
+  padding: 40px;
+  margin: 20px;
+  list-style-type: none;
+  width: 100%;
+}
+
+.main ul {
+  width: 100%;
+}
