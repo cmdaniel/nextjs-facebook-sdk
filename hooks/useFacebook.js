@@ -1,5 +1,6 @@
 
 import { useEffect } from 'react';
+let FB;
 
 const useFacebook = ({ addTrack }) => {
 
@@ -17,13 +18,23 @@ const useFacebook = ({ addTrack }) => {
 
     document.body.appendChild(facebookScript);
 
-    const href = window.location.href;
-    if (href.indexOf('refresh') <= 0) {
-      window.location.href = href+'?refresh';
+    const startScript = document.createElement('script');
+    const code = `window.fbAsyncInit = function() {
+      FB.init({
+        appId            : '${process.env.NEXT_PUBLIC_FACEBOOK_ID}',
+        autoLogAppEvents : ${addTrack},
+        xfbml            : true,
+        version          : 'v10.0'
+      });
+    };`;
+    startScript.appendChild(document.createTextNode(code));
+    document.body.appendChild(startScript);
+    if(window.FB) {
+      window.fbAsyncInit();
     }
-
     return () => {
       document.body.removeChild(facebookScript);
+      document.body.removeChild(startScript);
     }
   }, [addTrack]);
 };

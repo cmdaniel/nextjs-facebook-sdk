@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from '../../styles/FBComments.module.css';
 
 const FBComments = ({ width, href, numPosts, dataLazy }) => {
   
